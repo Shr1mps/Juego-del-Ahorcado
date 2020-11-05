@@ -52,15 +52,15 @@ IMAGES = ['''
     =========''']
 
 PALABRAS = [
-    'esternocleidomaistoideo'
-    'electroencefalograma'
-    'gato'
-    'rayo'
-    'cuchillo'
-    'mesa'
-    'silla'
-    'hamster'
-    'canario'
+    'esternocleidomaistoideo',
+    'electroencefalograma',
+    'gato',
+    'rayo',
+    'cuchillo',
+    'mesa',
+    'silla',
+    'hamster',
+    'canario',
     'tijera'
 ]
 
@@ -69,15 +69,22 @@ def random_word():
     return PALABRAS[index]
 
 def display(Hword, attempts):
-    print(IMAGES[attempts] +"\n")
-    pri
+    print(IMAGES[attempts])
+    print(' ')
+    print(Hword)
+    print('.-.-.-.-.-.-.-.-.-.')
+
+
+
+
 def run():
     word = random_word()
     Hword= ['-'] * len(word)
     attempts= 0
 
     while True:
-        display(hword, attempts)
+        display(Hword, attempts)
+        letra= str(input('Escoge una letra:'))
 
 if __name__ == '__main__':
     print('¡ B I E N V E N I D O !')
